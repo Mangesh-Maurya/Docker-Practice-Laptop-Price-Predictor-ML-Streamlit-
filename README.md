@@ -27,7 +27,7 @@ Edit
 bash
 Copy
 Edit
-git clone https://github.com/your-username/laptop-price-predictor-docker.git
+git clone https://github.com/Mangesh-Maurya/Docker-Practice-Laptop-Price-Predictor-ML-Streamlit
 cd laptop-price-predictor-docker
 2. Build the Docker Image
 bash
