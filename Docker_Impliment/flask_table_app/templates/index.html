@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Table</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        input, button { padding: 10px; margin: 10px; font-size: 16px; }
+        ul { list-style: none; padding: 0; }
+    </style>
+</head>
+<body>
+    <h1>Enter a Number to Generate Multiplication Table</h1>
+    <form method="post">
+        <input type="number" name="number" required placeholder="Enter number" />
+        <button type="submit">Generate Table</button>
+    </form>
+
+    {% if table %}
+        <h2>Multiplication Table of {{ number }}</h2>
+        <ul>
+            {% for row in table %}
+                <li>{{ row }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
